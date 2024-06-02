@@ -1,5 +1,5 @@
 from scipy.sparse.linalg.interface import LinearOperator
-from scipy.sparse.linalg.isolve.iterative import bicgstab
+from scipy.sparse.linalg import bicgstab
 
 import numpy as np
 
