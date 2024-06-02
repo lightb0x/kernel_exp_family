@@ -74,8 +74,8 @@ def test_gaussian_kernel_grad_theano_result_equals_manual():
     
     grad = gaussian_kernel_grad_theano(x, y, sigma)
     grad_manual = gaussian_kernel_grad(x, y[np.newaxis, :], sigma)[0]
-    print grad_manual
-    print grad
+    print(grad_manual)
+    print(grad)
     
     assert_allclose(grad, grad_manual)
 

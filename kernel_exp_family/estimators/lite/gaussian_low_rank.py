@@ -6,7 +6,7 @@ from kernel_exp_family.estimators.lite.gaussian import KernelExpLiteGaussian
 try:
     from kernel_exp_family.estimators.parameter_search_bo import BayesOptSearch
 except ImportError:
-    print "Bayesian Optimization for hyper-parameters unavailable -- pybo required"
+    print("Bayesian Optimization for hyper-parameters unavailable -- pybo required")
 from kernel_exp_family.kernels.incomplete_cholesky import incomplete_cholesky_gaussian, \
     incomplete_cholesky_new_points_gaussian
 from kernel_exp_family.tools.assertions import assert_array_shape

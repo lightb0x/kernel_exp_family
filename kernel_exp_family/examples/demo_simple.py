@@ -73,12 +73,12 @@ if __name__ == '__main__':
         est.fit(X)
         
         # main interface for log pdf and gradient
-        print est.log_pdf(np.zeros(D))
-        print est.log_pdf_multiple(np.random.randn(2, 2))
-        print est.grad(np.zeros(D))
+        print(est.log_pdf(np.zeros(D)))
+        print(est.log_pdf_multiple(np.random.randn(2, 2)))
+        print(est.grad(np.zeros(D)))
         
         # score matching objective function (can be used for parameter tuning)
-        print est.objective(X)
+        print(est.objective(X))
         
         visualise_fit_2d(est, X)
         plt.suptitle("Estimated with %s" % str(est.__class__.__name__))

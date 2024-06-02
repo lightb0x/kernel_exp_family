@@ -8,13 +8,13 @@ def test_xval_execute_no_shuffle():
     x = XVal(N=10, num_folds=3, shuffle=False)
     
     for train, test in x:
-        print train, test
+        print(train, test)
 
 def test_xval_execute_shuffle():
     x = XVal(N=10, num_folds=3, shuffle=True)
     
     for train, test in x:
-        print train, test
+        print(train, test)
 
 def test_xval_result_no_suffle():
     x = XVal(N=10, num_folds=3, shuffle=False)

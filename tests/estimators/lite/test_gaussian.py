@@ -217,8 +217,8 @@ def test_objective_matches_sym():
     J_sym = develop_gaussian.objective_sym(Z, sigma, lmbda, alpha)
     J = gaussian.objective(Z, Z, sigma, lmbda, alpha)
     
-    print type(J)
-    print type(J_sym)
+    print(type(J))
+    print(type(J_sym))
     assert_equal(J, J_sym)
     
 def test_objective_matches_sym_precomputed_KbC():

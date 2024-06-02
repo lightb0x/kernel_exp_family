@@ -15,7 +15,7 @@ import numpy as np
 
 def setup(N=10, D=3):
     """ Generates some data and parameters """
-    print N
+    print(N)
     sigma = np.random.randn() ** 2
     l = np.sqrt(np.float(sigma) / 2)
     lmbda = np.random.randn() ** 2

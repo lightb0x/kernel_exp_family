@@ -88,7 +88,7 @@ def fit_sym(Z, sigma, lmbda, L,
         C_operator = LinearOperator((N, N), matvec=matvec, dtype=np.float64)
         solution, info = bicgstab(C_operator, b, tol=cg_tol, maxiter=cg_maxiter)
         if info > 0:
-            print "Warning: CG not terminated within specified %d iterations" % cg_maxiter
+            print("Warning: CG not terminated within specified %d iterations" % cg_maxiter)
         a = -sigma / 2. * solution
         
         return a
