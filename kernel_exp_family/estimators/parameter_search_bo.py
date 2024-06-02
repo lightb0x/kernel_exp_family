@@ -48,7 +48,7 @@ class BayesOptSearch(object):
         self.num_initial_evaluations = num_initial_evaluations
 
         # parameter space dimensions correspond to sorted parameter bound keys
-        self.param_names = np.sort(param_bounds.keys())
+        self.param_names = np.sort(list(param_bounds.keys()))
         self.bounds = np.array([param_bounds[k] for k in self.param_names])
         
         self.initialised = False
