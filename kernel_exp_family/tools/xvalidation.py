@@ -13,7 +13,7 @@ class XVal(object):
         
         self.current_fold = 0
         
-    def next(self):
+    def __next__(self):
         per_fold = int(self.N / self.num_folds)
         
         # build test index set based on what current fold is
