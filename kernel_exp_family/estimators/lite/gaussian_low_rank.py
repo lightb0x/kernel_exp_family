@@ -1,6 +1,6 @@
 from abc import abstractmethod
 from scipy.sparse.linalg.interface import LinearOperator
-from scipy.sparse.linalg.isolve.iterative import bicgstab
+from scipy.sparse.linalg import bicgstab
 
 from kernel_exp_family.estimators.lite.gaussian import KernelExpLiteGaussian
 try:
