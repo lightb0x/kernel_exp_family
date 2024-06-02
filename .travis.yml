@@ -30,7 +30,7 @@ before_install:
     - pip install --no-index --find-links=$HOME/.cache/pip/wheels scipy
 
 # optional requirements
-    - pip install theano
+    - pip install pytensor
     - pip install autograd
 
 install:

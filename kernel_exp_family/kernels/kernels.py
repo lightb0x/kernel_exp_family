@@ -6,9 +6,9 @@ import numpy as np
 # THEANO IMPLEMENTATION #
 #########################
 try:
-    from theano import function
-    from theano import tensor as T
-    import theano
+    from pytensor import function
+    from pytensor import tensor as T
+    import pytensor as theano
     theano_available = True
 except ImportError:
     theano_available = False
